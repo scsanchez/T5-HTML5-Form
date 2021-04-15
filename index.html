@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+
+<form class="border p-5">
+        <header class="border p-3 h3 bg-light text-dark">
+            Payment form example
+        </header>
+        <div class="alert alert-danger" role="alert">Some fields are missing</div>             
+        
+        
+        <div class="form-row">
+             <div class="form-group col-md-4">
+                <label for="inputcard">Card #</label>
+                <input type="card" class="form-control" id="inputcard" placeholder="XXXXXXXXXXXXXXXX">
+            </div>
+
+             <div class="form-group col-md-2">
+                <label for="inputcvc">#CVC</label>
+                <input type="text" maxlength="4" class="form-control" id="inputcvc" placeholder="0000">
+            </div>
+    
+            <div class="form-group col-md-6">
+                 <label for="inputamount">Amount</label>
+                 <div class="form-inline">
+                    <span>$</span><input type="text" class="form-control" id="inputamount" placeholder="Amount">
+                </div>
+            </div>
+        </div>
+        
+        
+       <div class="form-row">     
+            <div class="form-group col-md-6">
+                <label for="inputfirstname">First Name</label>
+                <input type="text" class="form-control" id="inputfirstname" placeholder="">
+            </div>
+        
+            <div class="form-group col-md-6">
+                <label for="inputlastname">Last Name</label>
+                <input type="text" class="form-control" id="inputlastname" placeholder="">
+            </div>
+        </div>
+
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputcity">City</label>
+            <input type="text" class="form-control" id="inputcity" placeholder="">
+        </div>
+    
+        
+        <div class="form-group col-md-3">
+            <label for="inputState">State</label>
+            <input type="text" class="form-control" name="state" list="exampleList" placeholder="Pick a state">
+            <datalist id="exampleList">
+                <option value="Spain">  
+                <option value="France">
+                <option value="United States"></option>
+                <option value="Canada"></option>
+            </datalist>   
+        </div>
+
+        <div class="form-group col-md-3">
+            <label for="inputcity">Postal Code</label>
+            <input type="text" class="form-control" id="inputcity" placeholder="">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-6">
+            <label for="inputcity">We accept:</label>
+                 <div class="form-inline">
+                   <input type="radio" value=""><i class="fab fa-cc-mastercard"></i>
+                    <input type="radio" value=""><i class="fab fa-cc-visa"></i>
+                    <input type="radio"><i class="fab fa-cc-diners-club"></i>
+                    <input type="radio"><i class="fab fa-cc-amex"></i>
+                </div>
+        </div>
+        
+        <div class="form-group col-6">
+            <div class="form-floating">
+                   <textarea  class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                   <label for="floatingTextarea">Comments</label>
+            </div>
+        </div>
+    </div>
+    
+        
+
+        
+    </div>
+
+
+  
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+</html>
