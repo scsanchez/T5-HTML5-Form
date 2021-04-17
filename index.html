@@ -11,95 +11,100 @@
 </head>
 <body>
 
-<form class="border p-5">
+<form class="p-5">
+    <div class="border">
         <header class="border p-3 h3 bg-light text-dark">
             <h1>Payment form example</h1>
         </header>
-        <div class="alert alert-danger" role="alert">Some fields are missing</div>             
-        
-        
-        <div class="form-row">
-             <div class="form-group col-md-5">
-                <label for="inputcard">Card #</label>
-                <input type="card" class="form-control" id="inputcard" placeholder="XXXXXXXXXXXXXXXX">
+        <div class="p-4">
+                <div class="alert alert-danger" role="alert">Some fields are missing</div> 
+                
+
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="inputcard">Card #</label>
+                        <input type="card" class="form-control" id="inputcard" placeholder="XXXXXXXXXXXXXXXX">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputcvc">#CVC</label>
+                        <input type="text" maxlength="4" class="form-control" id="inputcvc" placeholder="0000">
+                    </div>  
+                    <div class="form-group col">
+                        <label for="inputamount">Amount</label>
+                        <div class="form-inline">
+                            <span>$</span><input type="text" class="form-control col" id="inputamount" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+                
+                
+            <div class="form-row">     
+                    <div class="form-group col-md-6">
+                        <label for="inputfirstname">First Name</label>
+                        <input type="text" class="form-control" id="inputfirstname" placeholder="">
+                    </div>
+                
+                    <div class="form-group col-md-6">
+                        <label for="inputlastname">Last Name</label>
+                        <input type="text" class="form-control" id="inputlastname" placeholder="">
+                    </div>
+                </div>
+
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputcity">City</label>
+                    <input type="text" class="form-control" id="inputcity" placeholder="">
+                </div>
+            
+                
+                <div class="form-group col-md-3">
+                    <label for="inputState">State</label>
+                    <input type="text" class="form-control" name="state" list="exampleList" placeholder="Pick a state">
+                    <datalist id="exampleList">
+                        <option value="Spain">  
+                        <option value="France">
+                        <option value="United States"></option>
+                        <option value="Canada"></option>
+                    </datalist>   
+                </div>
+
+                <div class="form-group col-md-3">
+                    <label for="inputcity">Postal Code</label>
+                    <input type="text" class="form-control" id="inputcity" placeholder="">
+                </div>
             </div>
 
-             <div class="form-group col-md-2">
-                <label for="inputcvc">#CVC</label>
-                <input type="text" maxlength="4" class="form-control" id="inputcvc" placeholder="0000">
+            <div class="form-row">
+                <div class="form-group col-6 ">
+                    <label for="inputcity">We accept:</label>
+                        <div class="form-inline col-5 bg-secondary">
+                        <input type="radio" value=""><i class="fab fa-cc-mastercard"></i>
+                            <input type="radio" value=""><i class="fab fa-cc-visa"></i>
+                            <input type="radio"><i class="fab fa-cc-diners-club"></i>
+                            <input type="radio"><i class="fab fa-cc-amex"></i>
+                        </div>
+                </div>
+                
+                <div class="form-group col-6">
+                    <div class="form-floating">
+                        <label for="floatingTextarea">Message</label>
+                        <textarea  class="form-control" id="floatingTextarea"></textarea>
+                        <small id="textHelp" class="form-text text-muted">Add any notes here.</small>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            <div class="form border p-3 bg-light text-dark "> 
+                <div class="col-md-12 text-right">
+                    <button type="button" class="btn btn-secondary align-self-end">Cancel</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
             </div>  
-            <div class="form-group col">
-                 <label for="inputamount">Amount</label>
-                 <div class="form-inline">
-                    <span>$</span><input type="text" class="form-control col" id="inputamount" placeholder="Amount">
-                </div>
-            </div>
-        </div>
-        
-        
-       <div class="form-row">     
-            <div class="form-group col-md-6">
-                <label for="inputfirstname">First Name</label>
-                <input type="text" class="form-control" id="inputfirstname" placeholder="">
-            </div>
-        
-            <div class="form-group col-md-6">
-                <label for="inputlastname">Last Name</label>
-                <input type="text" class="form-control" id="inputlastname" placeholder="">
-            </div>
         </div>
 
-
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="inputcity">City</label>
-            <input type="text" class="form-control" id="inputcity" placeholder="">
-        </div>
-    
-        
-        <div class="form-group col-md-3">
-            <label for="inputState">State</label>
-            <input type="text" class="form-control" name="state" list="exampleList" placeholder="Pick a state">
-            <datalist id="exampleList">
-                <option value="Spain">  
-                <option value="France">
-                <option value="United States"></option>
-                <option value="Canada"></option>
-            </datalist>   
-        </div>
-
-        <div class="form-group col-md-3">
-            <label for="inputcity">Postal Code</label>
-            <input type="text" class="form-control" id="inputcity" placeholder="">
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group col-6 ">
-            <label for="inputcity">We accept:</label>
-                 <div class="form-inline bg-light">
-                   <input type="radio" value=""><i class="fab fa-cc-mastercard"></i>
-                    <input type="radio" value=""><i class="fab fa-cc-visa"></i>
-                    <input type="radio"><i class="fab fa-cc-diners-club"></i>
-                    <input type="radio"><i class="fab fa-cc-amex"></i>
-                </div>
-        </div>
-        
-        <div class="form-group col-6">
-            <div class="form-floating">
-                <label for="floatingTextarea">Message</label>
-                <textarea  class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <small id="textHelp" class="form-text text-muted">Add any notes here.</small>
-            </div>
-        </div>
-    </div> 
-    <div class="form border p-3 h3 bg-light text-dark "> 
-        <div class="col-md-12 text-right">
-            <button type="button" class="btn btn-secondary align-self-end">Cancel</button>
-            <button type="button" class="btn btn-primary">Send</button>
-        </div>
-    </div>        
-</form>
+    </form>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
