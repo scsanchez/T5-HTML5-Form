@@ -77,17 +77,87 @@
             </div>
 
             <div class="form-row">
-                <div class="form-group col-6 ">
-                    <label for="inputcity">We accept:</label>
-                        <div class="form-inline col-5 bg-secondary">
-                        <input type="radio" value=""><i class="fab fa-cc-mastercard"></i>
-                            <input type="radio" value=""><i class="fab fa-cc-visa"></i>
-                            <input type="radio"><i class="fab fa-cc-diners-club"></i>
-                            <input type="radio"><i class="fab fa-cc-amex"></i>
-                        </div>
+            <div class="form-group col-3 ">
+              <label for="cards" class="d-block font-weight-bold"
+                >We accept:</label
+              >
+              <div class="bg-secondary rounded p-2">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cards"
+                    id="card1"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="card1"
+                    ><i class="fab fa-cc-mastercard text-white"></i
+                  ></label>
                 </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cards"
+                    id="card2"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="card2"
+                    ><i class="fab fa-cc-visa text-white"></i
+                  ></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cards"
+                    id="card3"
+                    value="option3"
+                  />
+                  <label class="form-check-label" for="card3"
+                    ><i class="fab fa-cc-diners-club text-white"></i
+                  ></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cards"
+                    id="card4"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="card4"
+                    ><i class="fab fa-cc-amex text-white"></i
+                  ></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cards"
+                    id="card5"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="card5"
+                    ><i class="fab fa-cc-paypal text-white"></i
+                  ></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cards"
+                    id="card6"
+                    value="option4"
+                  />
+                  <label class="form-check-label" for="card6"
+                    ><i class="fab fa-bitcoin text-white"></i
+                  ></label>
+                </div>
+              </div>
+            </div>
                 
-                <div class="form-group col-6">
+                <div class="form-group offset-3 col-6">
                     <div class="form-floating">
                         <label for="floatingTextarea">Message</label>
                         <textarea  class="form-control" id="floatingTextarea"></textarea>
